@@ -1,0 +1,81 @@
+main{
+  min-height: 37.5em;
+height: 600px;
+  background-image: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)) ,url("https://www.themoviedb.org/t/p/original/k47JEUTQsSMN532HRg6RCzZKBdB.jpg");
+  background-size: cover;
+
+ max-width: 100%;
+ display: grid;
+ grid-template-columns: repeat(12,1fr);
+ grid-template-rows: repeat(10,1fr);
+ margin-bottom: 3.12em;
+}
+main .info{
+  margin: 0 auto;
+  grid-column: 2/7;
+  grid-row: 4/6;
+  font-size: 16px;
+
+}
+main .info h2{
+  color: whitesmoke;
+  font-weight: 600;
+  font-size: 3.12em;
+  margin-bottom: 0.4em;
+}
+main .info p{
+  font-size:1em;
+  font-weight: normal;
+  line-height: 1.75em;
+
+  margin-bottom: 1.25em;
+ grid-column: 2/7;
+ color: whitesmoke;
+}
+main .info .btn{
+  color: #FFF;
+  text-align: center;
+  font-weight: normal;
+
+  grid-column: 2/5;
+  margin-left: 10px;
+  width: auto;
+  border-radius: 0.31em;
+  -webkit-border-radius: 0.31em;
+  -moz-border-radius: 0.31em;
+  -ms-border-radius: 0.31em;
+  -o-border-radius: 0.31em;
+  background: rgba(0,0,0, 0.5);
+  margin-bottom: 0.5em;
+  margin-right: 1.25em;
+  transition: .3s ease all;
+  border: none;
+  -webkit-transition: .3s ease all;
+  -moz-transition: .3s ease all;
+  -ms-transition: .3s ease all;
+  -o-transition: .3s ease all;
+}
+main .info .btn:hover{
+  background: #FFF;
+  color: #000;
+}
+@media only screen and (max-width: 800px)  {
+  main {
+    height: 450px;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(8,1fr);
+  }
+  main .info{
+    grid-row: 3/7;
+    grid-column: 2/10;
+
+  }
+  main .info .btn{
+    grid-column: 2/11;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+}
